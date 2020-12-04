@@ -2,9 +2,8 @@ const container = document.querySelector('.container');
 const text = document.querySelector('#text');
 
 // re-work JS to box breathing with 3 seconds per part
-const totalTime = 7500;
-const breatheTime = (totalTime / 5) * 2; 
-const holdTime = (totalTime / 5);
+const totalTime = 12000;
+const breathInterval = (totalTime / 4); 
 
 breatheAnimation();
 
@@ -15,17 +14,16 @@ function breatheAnimation () {
 
   setTimeout (() => {
     text.innerText = "Hold"
-  
+
     setTimeout(() => {
       text.innerText = "Breathe out"
       container.className = "container shrink"
-    }, holdTime)
-    /*
-    setTimeout(() => {
-      text.innerText = "Hold";
-    }, holdTime)
-    */
-  }, breatheTime)
+      
+      setTimeout(() => {
+        text.innerText = "Hold"
+      }, breathInterval)
+    }, breathInterval)
+  }, breathInterval)
 }
 
 setInterval(breatheAnimation, totalTime)
