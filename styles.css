@@ -1,5 +1,38 @@
 body {
-  background: url(images/elijah-hiett-5tutkWiAW5E-unsplash.jpg) fixed center
-    rgb(99, 125, 125);
+  background: url(images/elijah-hiett-5tutkWiAW5E-unsplash.jpg) no-repeat center
+    center/cover rgb(99, 125, 125);
   /* Photo by Elijah Hiett on Unsplash */
+  font-family: "Oxygen", sans-serif;
+  font-size: 18px;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+p {
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  position: relative;
+  transform: scale(1);
+}
+
+.credit {
+  font-size: 16px;
+  color: #efefef;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 }
