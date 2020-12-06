@@ -68,6 +68,9 @@ p {
   left: 140px;
   width: 20px;
   height: 190px;
+  /* background-color: red; */
+  animation: rotate 12000ms linear forwards infinite;
+  transform-origin: bottom center;
 }
 
 .pointer {
@@ -85,4 +88,14 @@ p {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
