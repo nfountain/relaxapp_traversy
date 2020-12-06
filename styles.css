@@ -62,6 +62,22 @@ p {
   z-index: -1;
 }
 
+.pointer-container {
+  position: absolute;
+  top: -40px;
+  left: 140px;
+  width: 20px;
+  height: 190px;
+}
+
+.pointer {
+  background-color: rgb(255, 248, 123);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: block;
+}
+
 .credit {
   font-size: 16px;
   color: #efefef;
